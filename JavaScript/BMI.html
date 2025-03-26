@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    <script>
+var height = 1.7;
+var weight = 55.7;
+var Bmi = weight/Math.pow(height,2);
+console.log("BMI is ",Bmi);
+
+// if(Bmi < 16){
+//     console.log("Severe Thinness"); 
+// }
+// else if(Bmi >=16 && Bmi <17){
+//     console.log("Moderate Thinness"); 
+// }
+// else if(Bmi >=17 && Bmi < 18.5){
+//     console.log("Mild Thinness"); 
+// }
+// else if(Bmi >=18.5 && Bmi < 25){
+//     console.log("Normal"); 
+// }
+//     else if (Bmi >= 25 && Bmi < 30) {
+//         console.log("Overweight");
+//     } 
+//     else if (Bmi >= 30 && Bmi < 35) {
+//         console.log("Obese Class I");
+//     } 
+//     else if (Bmi >= 35 && Bmi < 40) {
+//         console.log("Obese Class II");
+//     }
+//     else {
+//         console.log("Obese Class III");
+//     }
+
+// Using Ternary operator
+// Bmi < 16 ? console.log("Severe Thinness") :Bmi >=16 && Bmi <17 ? console.log("Moderate Thinness"):Bmi >=17 && Bmi < 18.5 ?console.log("Mild Thinness"):Bmi >=18.5 && Bmi < 25 ?console.log("Normal")
+//     :Bmi >= 25 && Bmi < 30 ?console.log("Overweight") :Bmi >= 30 && Bmi < 35 ? console.log("Obese Class I"):(Bmi >= 35 && Bmi < 40)?console.log("Obese Class II"):console.log("Obese Class III");
+    
+// Another way of using ternary operator
+
+        console.log( Bmi < 16 ? "Severe Thinness" : Bmi >=16 && Bmi <17 ? "Moderate Thinness": Bmi >=17 && Bmi < 18.5 ? "Mild Thinness": Bmi >=18.5 && Bmi < 25 ? "Normal"
+        :Bmi >= 25 && Bmi < 30 ? "Overweight": Bmi >= 30 && Bmi < 35 ? "Obese Class I" : Bmi >= 35 && Bmi < 40 ? "Obese Class II" : "Obese Class III");
+    
+</script>
+</body>
+</html>

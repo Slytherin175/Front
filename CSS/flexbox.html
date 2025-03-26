@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+    .box {
+        border: 10px;
+        background-color: lightblue;
+        text-align: center;
+    width: 200px;
+    height: 150px;;
+    }
+    .main-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; /*for main axis we use justify content  */
+        align-items: center;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
+
+    .box-1 {
+        /* order: 2;
+    flex: 3; */
+    }
+    .box-2 {
+        /* order: 3;
+    flex: 5; */
+        overflow: auto;
+    }
+    .box-3 {
+        /* order: 1;
+    flex: 3; */
+    }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box box-1">
+        <h3>Box 1</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, dolores.
+        </p>
+        </div>
+        <div class="box box-2">
+        <h3>Box 2</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, distinctio!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, totam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, necessitatibus.
+    
+        </p>
+    </div>
+    <div class="box box-3">
+        <h3>Box 3</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, dolores.
+        </p>
+    </div>
+    </div>
+
+</body>
+</html>
+<!-- use hyphen and bem convention for naming selectors -->

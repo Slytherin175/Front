@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+</head>
+<style>
+    body{
+        background-color: azure;
+        color: black;
+        text-align: center;
+        margin-top: 100px;
+    }
+    h1{
+        display: none;
+    }
+        @media(max-width: 500px){
+            body{
+                background-color: lightblue;
+            }
+            #smartphone h1{
+                display: block;
+
+            }
+        }
+        @media (min-width: 501px) and (max-width:768px){
+            body{
+                background-color: ivory;
+            }
+            #tablet h1{
+                display: block;
+            }
+            
+        }
+        @media (min-width: 769px) and (max-width:1200px){
+            body{
+                background-color: blanchedalmond;
+            }
+            #normal h1{
+                display: block;
+            }
+            
+        }
+        @media (min-width:1201px){
+            body{
+                background-color: lavender;
+            }
+            #widescreen h1{
+                display: block;
+            }
+            
+        }
+
+    
+</style>
+<body>
+    <div id="smartphone">
+        <h1>Smartphones</h1>
+    </div>
+    <div id="tablet">
+        <h1>Tablet</h1>
+    </div>
+    <div id="normal">
+        <h1>Normal</h1>
+    </div>
+    <div id="widescreen">
+        <h1>Widescreen</h1>
+    </div>
+</body>
+</html>
+<!-- mobile phone size = <500px
+tablets 501px 768px
+normal 769 -1000px
+wide screen - 1200px> - -->

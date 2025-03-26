@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Internal CSS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+      * {
+        font-family: "Play", sans-serif;
+        background-color: aquamarine;
+      }
+      h1,
+      p {
+        color: whitesmoke;
+        background-color: blue;
+      }
+      p {
+        /*         
+        background-color: black; */
+        font-family: cursive;
+        border-radius: 12px;
+        /* solid ,dotted, dashed  */
+        border: 1px solid white;
+        padding:  8px 10px 14px 12px;
+      }
+      .custom-btn{
+        border-radius: 10px;
+        background-color: aliceblue;
+        border:none;
+        color: blueviolet;
+        padding: 12px;
+        box-shadow: 3px 4px 5px rgb(192, 147, 192);
+        cursor: pointer;
+
+      }
+      .custom-btn:hover{
+        background-color: rgb(125, 215, 206);
+        color: beige;
+
+      }
+      #header{
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding: 12px;
+        border-radius: 12px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Welcome to Internal CSS</h1>
+    <h1>Hello we are testing out css here </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos optio
+      esse tenetur quaerat fugiat sint libero facilis, blanditiis fuga? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Quis inventore
+      laudantium sed distinctio id, quia laboriosam, reiciendis nisi ad ullam
+      labore temporibus, tempora unde ex enim possimus voluptatibus. Nihil,
+      dicta.
+    </p>
+    <button class="custom-btn">Click Here</button>
+  </body>
+</html>
+<!-- **Box Model**
+container contains the main content 
+content
+border
+container 
+padding takes place in clockwise direction 
+ex: padding: 5px 10px 15px 20px-->
+
+<!-- internal CSS Selectors
+1. id -> # unique style 
+2. class -> . repeated for many tags
+3. tag[element selector] (h1,p,h2)
+t4. Universal Selector -> *
+5. pseudo selector hover effect is achieved by using the pseudo selector : -->
+<!-- TO Achieve Responsiveness we use
+ 1) media query 
+ are of three types
+ a)screen
+ b)print
+ c)speech
+ 2)Flex box
+ 3)Bootstrap/Tailwind css or any other frame works -->

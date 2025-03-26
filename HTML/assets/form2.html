@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Valentine's Day Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #336cd6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="file"] {
+            border: none;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #338fd6;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #e6d027;
+        }
+
+        select {
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        .options input {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Valentine's Day Eve</h1>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone No</label>
+        <input type="number" placeholder="Enter phone no">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Pass Key</label>
+        <div class="options">
+            <input type="radio" name="Pass">Single
+            <input type="radio" name="Pass">Couple
+        </div>
+
+        <label>Favorite Dish</label>
+        <div class="options">
+            <input type="checkbox">Biryani
+            <input type="checkbox">Pizza
+            <input type="checkbox">Pulav
+            <input type="checkbox">Momo
+            <input type="checkbox">Juice
+        </div>
+
+        <label>DOB</label>
+        <input type="date">
+
+        <label>Upload Aadhaar Card</label>
+        <input type="file">
+
+        <label for="">Select Branch</label>
+        <select>
+            <option value="">J P Nagar</option>
+            <option value="">Jaya Nagar</option>
+            <option value="">HSR Layout</option>
+            <option value="">Banashankari</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
